@@ -1,0 +1,89 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Blog Form */
+#blogForm {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+#blogForm input, 
+#blogForm textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#blogForm button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#blogForm button:hover {
+  background: #005fa3;
+}
+
+/* Blog List */
+#blogList {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.blog {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.blog h3 {
+  margin: 0;
+}
+.blog p {
+  margin: 5px 0;
+}
+.blog button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.blog .edit {
+  background: #ffc107;
+}
+.blog .delete {
+  background: #dc3545;
+  color: white;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
